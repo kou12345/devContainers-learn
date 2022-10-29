@@ -4,6 +4,10 @@ services:
   api:
     container_name: fastapi-test
     build: .
+    volumes:
+      - type: bind
+        source: ./app
+        target: /workspace/app
     expose:
       - 8000
     ports:
