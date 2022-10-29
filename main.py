@@ -7,4 +7,4 @@ app = FastAPI()
 
 @app.get("/")
 def get_root():
-    return {"hello": "container"}
+    return {"hello": "world"}
